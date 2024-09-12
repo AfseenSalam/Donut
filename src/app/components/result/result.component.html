@@ -1,0 +1,12 @@
+<div class = "row border-bottom">
+<div class = "col-4">
+    <h3>{{DisplayDonut.name}}</h3>
+</div>
+    <div class ="col-4">
+        <img [src] = "DisplayDonut.photo" alt="{{ DisplayDonut .name }}"  style="width:150px;"/>
+    </div>
+    <div class ="col-4">
+        <p><a [href]="DisplayDonut.photo_attribution" target="_blank">Photo Attribution</a></p>
+    </div>
+  
+</div>

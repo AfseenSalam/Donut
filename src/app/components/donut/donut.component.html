@@ -1,0 +1,11 @@
+<div class = "container">
+    <button type="button" class="btn btn-lg btn-light "  (click)="toggle()" >Donut Shop</button>
+    <!-- <p>{{donutResult.count}}</p> -->
+     @if(showForm){
+        @for (item of donutResult.results; track $index) {
+            <app-result [DisplayDonut]="item"></app-result>
+        }
+     }
+    
+</div>
+

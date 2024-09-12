@@ -1,0 +1,11 @@
+<div class = "container">
+    <button type="button" class="btn btn-lg btn-light "  (click)="toggle()">Hall of Fame</button>
+    <!-- <p>{{donutResult.count}}</p> -->
+     @if(showForm){
+        @for (item of hallResult.complete; track $index) {
+            <app-hall-complete [DisplayHall]="item"></app-hall-complete>
+        }
+     }
+    
+</div>
+
